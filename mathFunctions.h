@@ -1,15 +1,12 @@
 #ifndef MATHFUNCTIONS_H
 #define MATHFUNCTIONS_H
 
-#include <cmath>//ëîãàðèôìû è ñòåïåíè
+#include <cmath>
 namespace calculator {
 
 #define EXP 2.7182818284590452353602
 
-template<typename T>
-T absolute(const T number) {
-        return (number >= 0) ? number : (number * (-1));
-    };
+
 
 
 double sqrt(const double);
