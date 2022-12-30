@@ -19,5 +19,8 @@ int main() {
     std::cout << sqrt(8) << "\n";
     std::cout << sqrt(-1) << "\n";//не то т.к. корень из отрицательного 
     std::cout << pow(8, 0.5) << "\n";//аналогия sqrt
+    std::cout << sinus(60)<<"\n";
+    std::cout << cosinus(-60)<<"\n";
+    std::cout << module(-60);
     return 0;
 }
