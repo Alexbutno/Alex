@@ -55,12 +55,12 @@ double calculator::sinus(double degree){
 }
 double calculator::cosinus(double degree){
 	double temp = degree;
-	while (module(temp) >= 180)               // но есть проблема со знаком после (-180,180)
-		temp = module(temp) - 180;
-	double rad = temp * 3.1415926 / 180;                                     
+	while (module(temp) >= 180)
+		temp = module(temp) - 180;           // но есть проблема со знаком после (-180,180)
+	double rad = temp * 3.1415926 / 180;
 	double res = 0;
 	for (int i = 0; i <= 20; i++) {
-		res += (pow(-1, i) * pow(rad, 2 * i + 1)) / factorial(2 * i + 1);
+		res += (pow(-1, i) * pow(rad, 2 * i)) / factorial(2 * i);
 	}
 	return res;
 }
