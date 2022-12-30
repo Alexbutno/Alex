@@ -1,7 +1,7 @@
 #ifndef MATHFUNCTIONS_H
 #define MATHFUNCTIONS_H
 
-#include <cmath>//логарифмы и степени
+#include <cmath>//Г«Г®ГЈГ Г°ГЁГґГ¬Г» ГЁ Г±ГІГҐГЇГҐГ­ГЁ
 namespace calculator {
 
 #define EXP 2.7182818284590452353602
@@ -21,5 +21,12 @@ double reciprocalFunction(const double);
 long long factorial(const long long);
     
  double logarithm(const double, const double = EXP);
+ 
+ double module(const double a);
+
+ double sinus(double degree);
+
+
+ double cosinus(double degree);
 }
 #endif
